@@ -9,6 +9,7 @@ async function getConnection() {
         database: 'my_store'
     });
     await client.connect();
+    return client;
 }
 
 module.exports = getConnection;
